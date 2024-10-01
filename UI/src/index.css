@@ -1,0 +1,228 @@
+/* 
+ * Reset margin and padding for all elements and their pseudo-elements 
+ * to ensure consistent spacing across different browsers.
+ */
+*, *::before, *::after {
+  margin: 0; 
+  padding: 0; 
+}
+
+/* 
+ * Set the background color and text color for the body of the document.
+ * Add padding around the body content.
+ */
+body {
+  background-color: #1a1625;
+  color: rgba(249, 239, 239, 0.808);
+  padding: 2rem;
+}
+
+/* 
+ * Style for stock name elements to handle overflow text with ellipsis.
+ * Ensures the text does not wrap and is constrained to 33% width.
+ */
+.stock-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 33%;
+  white-space: nowrap;
+}
+
+/* 
+ * Style for individual stock list items.
+ * Removes default list styling, adds background color, padding, 
+ * flexbox layout, box shadow, and rounded corners.
+ */
+.stock-list-item {
+  list-style: none;
+  background: #544872;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px grey;
+  border-radius: 4px;
+}
+
+/* 
+ * Style for the buy button.
+ * Adds padding, pointer cursor, removes outline, sets background color,
+ * removes border, and adds slight border radius.
+ */
+.buy-button {
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  background: #9a91ac;
+  border: none;
+  border-radius: 2px;
+}
+
+/* 
+ * Style for the sell button.
+ * Similar to the buy button but with a different background color.
+ */
+.sell-button {
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  background: rgb(190, 116, 222);
+  border: none;
+  border-radius: 2px;
+}
+
+/* 
+ * Utility class for flexbox layout with row direction.
+ */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 
+ * Utility class for flexbox layout with column direction.
+ */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+ * Utility class to center items both horizontally and vertically.
+ */
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+ * Utility class to space items evenly with space between them.
+ */
+.flex-space-between {
+  justify-content: space-between;
+}
+
+/* 
+ * Utility class to space items evenly with space around them.
+ */
+.flex-space-around {
+  justify-content: space-around;
+}
+
+/* 
+ * Utility class to space items evenly with equal space between them.
+ */
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* 
+ * Utility class to align items to the start of the flex container.
+ */
+.flex-start {
+  justify-content: flex-start;
+}
+
+/* 
+ * Utility class to align items to the end of the flex container.
+ */
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* 
+ * Utility class to align items to the start of the cross axis.
+ */
+.align-start {
+  align-items: flex-start;
+}
+
+/* 
+ * Utility class to align items to the end of the cross axis.
+ */
+.align-end {
+  align-items: flex-end;
+}
+
+/* 
+ * Utility class to align items to the center of the cross axis.
+ */
+.align-center {
+  align-items: center;
+}
+
+/* 
+ * Utility class to add a gap of 1rem between flex items.
+ */
+.gap-1 {
+  gap: 1rem;
+}
+
+/* 
+ * Utility class to add a gap of 2rem between flex items.
+ */
+.gap-2 {
+  gap: 2rem;
+}
+
+/* 
+ * Utility class to add a gap of 3rem between flex items.
+ */
+.gap-3 {
+  gap: 3rem;
+}
+
+/* 
+ * Utility class to add a gap of 1.5rem between flex items.
+ */
+.gap-1-5 {
+  gap: 1.5rem;
+}
+
+/* 
+ * Utility class to add a gap of 2.5rem between flex items.
+ */
+.gap-2-5 {
+  gap: 2.5rem;
+}
+
+/* 
+ * Utility class to add a gap of 0.5rem between flex items.
+ */
+.gap-0-5 {
+  gap: 0.5rem;
+}
+
+/* 
+ * Utility class to allow a flex item to grow to fill available space.
+ */
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* 
+ * Utility class to allow a flex item to shrink if necessary.
+ */
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+/* 
+ * Utility class to set the initial main size of a flex item to 1.
+ */
+.flex-basis-1 {
+  flex-basis: 1;
+}
+
+/* 
+ * Utility class to set the initial main size of a flex item to 0.
+ */
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+/* 
+ * Utility class to allow flex items to wrap onto multiple lines.
+ */
+.flex-wrap {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "stock-market",  // Name of the application
+  "version": "0.1.0",  // Version of the application
+  "private": true,  // Indicates that this package is not meant to be published
+  "dependencies": {  // List of dependencies required for the application
+    "@reduxjs/toolkit": "^2.2.7",  // Redux Toolkit for state management
+    "@testing-library/jest-dom": "^5.17.0",  // Custom jest matchers for DOM node assertions
+    "@testing-library/react": "^13.4.0",  // React testing utilities
+    "@testing-library/user-event": "^13.5.0",  // Simulates user events for testing
+    "react": "^18.3.1",  // React library for building user interfaces
+    "react-dom": "^18.3.1",  // React package for working with the DOM
+    "react-redux": "^9.1.2",  // Official React bindings for Redux
+    "react-scripts": "5.0.1",  // Scripts and configuration used by Create React App
+    "web-vitals": "^2.1.4"  // Library for measuring web performance metrics
+  },
+  "scripts": {  // Scripts that can be run using npm or yarn
+    "start": "react-scripts start",  // Starts the development server
+    "build": "react-scripts build",  // Bundles the app into static files for production
+    "test": "react-scripts test",  // Starts the test runner
+    "eject": "react-scripts eject"  // Removes the single build dependency from the project
+  },
+  "eslintConfig": {  // ESLint configuration for linting the code
+    "extends": [
+      "react-app",  // Use the recommended rules for React applications
+      "react-app/jest"  // Use the recommended rules for Jest testing
+    ]
+  },
+  "browserslist": {  // Specifies the target browsers for the application
+    "production": [  // Browsers to support in production
+      ">0.2%",  // Browsers with more than 0.2% market share
+      "not dead",  // Exclude browsers that are no longer maintained
+      "not op_mini all"  // Exclude Opera Mini
+    ],
+    "development": [  // Browsers to support in development
+      "last 1 chrome version",  // Last version of Chrome
+      "last 1 firefox version",  // Last version of Firefox
+      "last 1 safari version"  // Last version of Safari
+    ]
+  }
+}
